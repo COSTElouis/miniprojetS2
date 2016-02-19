@@ -5,7 +5,15 @@ public class main
 
 	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
+		/**
+		 * creation of 2 player: player1 and player2
+		 */
+		Player player1 = new Player("bob");
+		Player player2= new Player("Michou");
+		/**
+		 * creation of a new game which is ready to play
+		 */
+		new Game().play();
 
 	}
 
