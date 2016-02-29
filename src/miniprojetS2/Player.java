@@ -22,16 +22,15 @@ public class Player
 	 */
 	public String getLogin()
 	{
-		return login;
+		return this.login;
 	}
 	
 	/**
 	 * move a pawn in fonction of position pawn and the type of the pawn
 	 */
 
-	public void move(int x,int y)
+	public void move()
 	{
-		
 		
 	}
 
