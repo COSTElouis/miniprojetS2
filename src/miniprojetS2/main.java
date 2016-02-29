@@ -11,6 +11,10 @@ public class main
 		Player player1 = new Player("bob");
 		Player player2= new Player("Michou");
 		/**
+		 * creation of new grid
+		 */
+		Grid grid= new Grid();
+		/**
 		 * creation of a new game which is ready to play
 		 */
 		new Game().play();

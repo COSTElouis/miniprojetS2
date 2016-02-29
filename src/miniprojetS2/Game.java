@@ -18,6 +18,14 @@ public class Game
 	 */
 	public void play()
 	{
-		
+		while (echecEtMat()==false)
+		{
+			player1.movePawn();
+			player2.movePawn();
+		}
+	}
+	private boolean echecEtMat()
+	{
+		return false;
 	}
 }
