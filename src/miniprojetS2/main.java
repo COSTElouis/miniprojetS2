@@ -8,8 +8,7 @@ public class main
 		/**
 		 * creation of 2 player: player1 and player2
 		 */
-		Player player1 = new Player("bob");
-		Player player2= new Player("Michou");
+		
 		/**
 		 * creation of new grid
 		 */

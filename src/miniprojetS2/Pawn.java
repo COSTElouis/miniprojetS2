@@ -24,11 +24,12 @@ public class Pawn
 		this.x=x;
 		this.y=y;
 	}
-	/**
-	 * move a pawn in fonction of position pawn and the type of the pawn
-	 */
-	public void movePawn()
+	
+	public Pawn movePawn(Pawn pawn,int x, int y)
 	{
-		
+		pawn.x=x;
+		pawn.y=y;
+		return pawn;
 	}
+
 }
