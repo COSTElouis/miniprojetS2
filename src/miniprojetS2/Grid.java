@@ -8,19 +8,18 @@ public class Grid
 	
 	public Grid()
 	{
-
+		for (int numberoflines=0;numberoflines<NUMBER_OF_LINES;numberoflines++)
+		{
+			for (int numberofcolumn=0;numberofcolumn<NUMBER_OF_COLUMNS;numberofcolumn++)
+			{
+				
+			}
+		}
 	}
 	
 	public String toString()
 	{
-				for (int numberOfLine = 0; numberOfLine < NUMBER_OF_LINES; numberOfLine++)
-				{
-					for (int numOfColumn = 0; numOfColumn < NUMBER_OF_COLUMNS; numOfColumn++)
-					grid += "-";
-					
-					grid += "\n";
-				}
-				return grid;
+		return grid;
 	}
 	
 	
