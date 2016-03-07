@@ -13,6 +13,7 @@ public class main
 		 * creation of new grid
 		 */
 		Grid grid= new Grid();
+		grid.toString();
 		/**
 		 * creation of a new game which is ready to play
 		 */
