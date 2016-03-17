@@ -1,20 +1,27 @@
 package miniprojetS2;
+
+// TODO fix comment (what kind of game?)
 /**
- * class represente the game 
+ * represents the game 
  * @author costel
  *
  */
+// TODO rename class (what king of game?)
 public class Game
 {
+	
+	// TODO fix comment (ask for advice)
 	/**
 	 * represente a game 
 	 */
 	public Game()
 	{
-		
+		// TODO think about it: a constructor is supposed to initialize fields. Where are fields?)
 	}
+	
+	// TODO detail comment (algorithm)
 	/**
-	 * methode which run the game and create 
+	 * Play the game 
 	 */
 	public void play()
 	{
@@ -29,6 +36,7 @@ public class Game
 			player2.move();
 		}
 	}
+	
 	private boolean echecEtMat()
 	{
 		return false;

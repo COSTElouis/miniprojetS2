@@ -1,5 +1,6 @@
 package miniprojetS2;
 
+//TODO write comment
 public class Player
 {
 	/**
@@ -7,6 +8,8 @@ public class Player
 	 */
 	private String login;
 	
+	// TODO fix comment
+	// TODO rename parameter
 	/**
 	 * create a player who has a login
 	 * @param l
@@ -16,6 +19,7 @@ public class Player
 		this.login=l;
 	}
 	
+	// TODO fix comment
 	/**
 	 * 
 	 * @return login of the player 
