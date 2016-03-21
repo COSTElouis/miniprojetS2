@@ -1,5 +1,9 @@
 package miniprojetS2;
-
+/**
+ * 
+ * @author costel
+ * class which creating a Pawn piece.
+ */
 public class Pawn extends Piece
 {
 

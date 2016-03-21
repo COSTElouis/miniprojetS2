@@ -19,14 +19,27 @@ public class Grid
 	
 	// TODO write comment (done)
 	// This is the constructor of the chess game grid
+
 	public Grid()
 	{
-		String grid="";
+		Grid[][] grid = null;
 		for (int numberoflines=0;numberoflines<NUMBER_OF_LINES;numberoflines++)
 		{
 			for (int numberofcolumn=0;numberofcolumn<NUMBER_OF_COLUMNS;numberofcolumn++)
 			{
-				
+				grid[numberoflines][numberofcolumn]=null;
+			}
+		}
+	}
+	
+	public String toString()
+	{
+		Grid[][] gridString=null;
+		for (int numberoflines=0;numberoflines<NUMBER_OF_LINES;numberoflines++)
+		{
+			for (int numberofcolumn=0;numberofcolumn<NUMBER_OF_COLUMNS;numberofcolumn++)
+			{
+				gridString[numberoflines][numberofcolumn]="|---";
 			}
 		}
 	}

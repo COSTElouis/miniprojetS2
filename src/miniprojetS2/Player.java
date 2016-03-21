@@ -1,25 +1,31 @@
 package miniprojetS2;
 
-//TODO write comment
+//TODO write comment (done)
+/**
+ * class player which create a player with his login
+ * @author costel
+ *
+ */
 public class Player
 {
 	/**
+	 * 
 	 * login of a player
 	 */
 	private String login;
 	
 	// TODO fix comment
-	// TODO rename parameter
+	// TODO rename parameter (done)
 	/**
 	 * create a player who has a login
-	 * @param l
+	 * @param login
 	 */
-	public Player(String l)
+	public Player(String login)
 	{
-		this.login=l;
+		this.login=login;
 	}
 	
-	// TODO fix comment
+	// TODO fix comment (done)
 	/**
 	 * 
 	 * @return login of the player 
@@ -28,15 +34,5 @@ public class Player
 	{
 		return this.login;
 	}
-	
-	/**
-	 * move a pawn in fonction of position pawn and the type of the pawn
-	 */
-
-	public void move()
-	{
-		
-	}
-
 	
 }
