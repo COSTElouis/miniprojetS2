@@ -19,7 +19,7 @@ public class Position
 
 	public int getLine()
 	{
-		return line;
+		return this.line;
 	}
 
 
@@ -33,7 +33,7 @@ public class Position
 
 	public int getColumn()
 	{
-		return column;
+		return this.column;
 	}
 
 

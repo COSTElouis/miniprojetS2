@@ -41,8 +41,11 @@ public class Chessgame
 		
 		while ((!echecEtMat()) || (!surrend()))
 		{
-			player1.move();
-			player2.move();
+			if (counter%2==0)
+				player1.move();
+			else 
+				player2.move();
+			counter++;
 		}
 	}
 	
