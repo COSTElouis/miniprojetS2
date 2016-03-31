@@ -8,7 +8,7 @@ package miniprojetS2;
  */
 
 	
-// TODO rename class (what king of game?) (done)
+// TODO rename class (not compliant wih naming conventions)
 public class Chessgame
 {
 	
@@ -17,22 +17,21 @@ public class Chessgame
 	 */
 	private int counter;
 	
-	// TODO fix comment (ask for advice) (done)
-	 
-	//represent a game 
+	// TODO fix comment (ask for advice) 
+ 
 	 /**
 	  * creation of 2 players and the grid.
 	  */
 	public Chessgame(String gamer1, String gamer2)
 	{
-		// TODO think about it: a constructor is supposed to initialize fields. Where are fields?) (done)
+		// TODO think about it: a constructor is supposed to initialize fields. Where are fields?)
 		Player player1 = new Player(gamer1);
 		Player player2= new Player(gamer2);
 		Grid grid[][]=new Grid[8][8];
 		
 	}
 
-	// TODO detail comment (algorithm) (done)
+	// TODO detail comment (write algorithm using an algorithmic-like syntax)
 	/**
 	 * while anyplayer don't surrend or lose the game continue and each player play .
 	 */

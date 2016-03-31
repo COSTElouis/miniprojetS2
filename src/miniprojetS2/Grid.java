@@ -1,23 +1,21 @@
 package miniprojetS2;
 
-// TODO write comment (done)
+// TODO write javadoc comment
 // Represent the chess game grid
 public class Grid
 {
-	// TODO write comment (done)
+	// TODO write javadoc comment
 	// Represent the line's number of the chess game grid
 	private final static int NUMBER_OF_LINES=8;
 	
-	// TODO write comment (done)
+	// TODO write javadoc comment
 	// Represent the column's number of the chess game grid
 	private final static int NUMBER_OF_COLUMNS=8;
 	
+
 	
 	
-	// TODO initialize field in constructor, not when declaring it (done)
-	
-	
-	// TODO write comment (done)
+	// TODO write javadoc comment
 	// This is the constructor of the chess game grid
 
 	public Grid()
