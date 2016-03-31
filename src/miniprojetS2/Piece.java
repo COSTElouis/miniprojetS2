@@ -14,6 +14,17 @@ public class Piece
 		this.color = color;
 	}
 	
+	public boolean isValid(Move move)
+	{
+		//TODO when method collision is finish implement the condition 
+		if (move.getMoveX()==0 && move.getMoveY()==0 || move.getFinish().getLine()<0 || 
+				move.getFinish().getColumn()<0 || move.getFinish().getLine()>8 ||
+				move.getFinish().getColumn()>8)
+		{
+			return false;
+		}
+		return true;
+	}
 	
 	public String getNom()
 	{

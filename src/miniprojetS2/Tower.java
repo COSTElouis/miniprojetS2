@@ -12,6 +12,12 @@ public class Tower extends Piece
 		super(nom, color);
 	}
 
-	
+	public boolean isValid(Move move)
+	{
+		super.isValid(move);
+		if (move.getMoveX()*move.getMoveY()!=0)
+		{return false;}
+		return true;
+	}
 
 }

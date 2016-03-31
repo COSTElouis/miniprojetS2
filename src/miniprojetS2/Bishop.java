@@ -11,5 +11,12 @@ public class Bishop extends Piece
 	{
 		super("bishop", color);
 	}
-
+	
+	public boolean isValid(Move move)
+	{
+		super.isValid(move);
+		if (Math.abs(move.getFinish().getLine()-move.getStart().getLine())!=Math.abs(move.getFinish().getColumn()-move.getStart().getColumn()))
+		{return false;}
+		return true;
+	}
 }

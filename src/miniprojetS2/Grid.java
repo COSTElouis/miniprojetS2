@@ -1,7 +1,11 @@
 package miniprojetS2;
 
-// TODO write javadoc comment
-// Represent the chess game grid
+// TODO write javadoc comment (done)
+/**
+ *  Represent the chess game grid
+ * @author costel
+ *
+ */
 public class Grid
 {
 	// TODO write javadoc comment

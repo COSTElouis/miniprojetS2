@@ -12,4 +12,13 @@ public class Queen extends Piece
 		super(nom, color);
 	}
 
+	public boolean isValid(Move move)
+	{
+		super.isValid(move);
+		if (Math.abs(move.getFinish().getLine()-move.getStart().getLine())!=
+				Math.abs(move.getFinish().getColumn()-move.getStart().getColumn()) || 
+				move.getMoveX()*move.getMoveY()!=0)
+		{return false;}
+		return true;
+	}
 }
