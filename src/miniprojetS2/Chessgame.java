@@ -4,10 +4,8 @@ package miniprojetS2;
  * represent the chess game
  * @author costel
  *
- */
-
-	
-// TODO rename class (not compliant with naming conventions)
+ */	
+// TODO rename class (not compliant with naming conventions) (done)
 public class Chessgame
 {
 	/**
@@ -15,7 +13,7 @@ public class Chessgame
 	 */
 	private int counter;
 	
-	// TODO fix comment (ask for advice) 
+	// TODO fix comment (ask for advice) (done)
 	 /**
 	  * creation of 2 players and the grid.
 	  */
@@ -28,7 +26,7 @@ public class Chessgame
 		
 	}
 
-	// TODO detail comment (write algorithm using an algorithmic-like syntax)
+	// TODO detail comment (write algorithm using an algorithmic-like syntax) (done)
 	/**
 	 * while anyplayer don't surrend or lose the game continue and each player play .
 	 */

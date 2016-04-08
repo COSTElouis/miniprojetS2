@@ -2,24 +2,38 @@ package miniprojetS2;
 
 public class Piece
 {
-	// TODO write "javadoc" comment (not javadoc style)
-	// Name of the piece
-	// TODO rename field
-	private String nom;
+	// TODO write "javadoc" comment (not javadoc style) (done)
+	/**
+	 *  Name of the piece
+	 */
+	// TODO rename field (done)
+	private String name;
 
-	// TODO write "javadoc" comment (not javadoc style)
-	// Color of the piece
+	// TODO write "javadoc" comment (not javadoc style) (done)
+	/**
+	 *  Color of the piece
+	 */
 	private int color;
 	
 	
-	// TODO write comment
-	public Piece(String nom, int color)
+	// TODO write comment (done)
+	/**
+	 * the constructor of the class Piece
+	 * @param name
+	 * @param color
+	 */
+	public Piece(String name, int color)
 	{
-		this.nom = nom;
+		this.name = name;
 		this.color = color;
 	}
 
-	// TODO write comment
+	// TODO write comment (done)
+	/**
+	 * the definition of method who return true if the movement is in the grid
+	 * @param move
+	 * @return
+	 */
 	public boolean isValid(Move move)
 	{
 		//TODO when method collision is finish implement the condition 
@@ -32,26 +46,42 @@ public class Piece
 		return true;
 	}
 	
-	// TODO write comment
-	// TODO rename method
-	public String getNom()
+	// TODO write comment(done)
+	// TODO rename method (done)
+	/**
+	 * method which permit to get the name of the object called
+	 * @return the name
+	 */
+	public String getName()
 	{
-		return nom;
+		return name;
 	}
 
-	// TODO write comment
-	public void setNom(String nom)
+	// TODO write comment (done)
+	/**
+	 * method which permit to set the field name of the object called
+	 * @param name
+	 */
+	public void setName(String name)
 	{
-		this.nom = nom;
+		this.name = name;
 	}
 
-	// TODO write comment
+	// TODO write comment (done)
+	/**
+	 * method which permit to get the color of the object called
+	 * @return the color
+	 */
 	public int getColor()
 	{
 		return color;
 	}
 
-	// TODO write comment
+	// TODO write comment (done)
+	/**
+	 * method which permit to set the field color of the object called
+	 * @param color
+	 */
 	public void setColor(int color)
 	{
 		this.color = color;

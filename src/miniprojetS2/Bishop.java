@@ -6,12 +6,20 @@ package miniprojetS2;
  */
 public class Bishop extends Piece
 {
-
+	/**
+	 * constructor of the class Bishop
+	 * @param nom
+	 * @param color
+	 */
 	public Bishop(String nom, int color)
 	{
 		super("bishop", color);
 	}
 	
+	/**
+	 * the redefinition of method "isValid" of Piece superclass
+	 * who return true if the movement of the Bishop matches with chess game rules 
+	 */
 	public boolean isValid(Move move)
 	{
 		super.isValid(move);

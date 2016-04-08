@@ -10,24 +10,18 @@ public class Main
 {
 	// TODO write comment (done)
 	/**
-	 * signature of the methode main
+	 * signature of the method main
 	 * @param args
 	 */
 	public static void Main(String[] args)
 	{
 		
-		// TODO javadoc syntax is not allowed for implementation comment
-		
-		/**
-		 * creation of new grid
-		 */
+		// TODO javadoc syntax is not allowed for implementation comment (done)
 		
 		Grid grid= new Grid();
 		
-		// TODO do not use javadoc syntax for implementation documentation
-		/**
-		 * creation of a new game which is ready to play
-		 */
+		// TODO do not use javadoc syntax for implementation documentation (done)
+		
 		new Chessgame("yoyo","loulou").play();
 
 	}

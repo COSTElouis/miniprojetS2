@@ -1,8 +1,8 @@
 package miniprojetS2;
 
-//TODO fix comment (this class creates nothing)
+//TODO fix comment (this class creates nothing) (done)
 /**
- * class player which create a player with his login
+ * class player which represent a player
  * @author costel
  *
  */
@@ -14,7 +14,7 @@ public class Player
 	 */
 	private String login;
 	
-	// TODO fix comment
+	// TODO fix comment (done)
 	/**
 	 * create a player who has a login
 	 * @param login
@@ -24,9 +24,9 @@ public class Player
 		this.login=login;
 	}
 	
-	// TODO fix comment (general description is missing)
+	// TODO fix comment (general description is missing) (done)
 	/**
-	 * 
+	 * method which permit to get the login of a player
 	 * @return login of the player 
 	 */
 	public String getLogin()

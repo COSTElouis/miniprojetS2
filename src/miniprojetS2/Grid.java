@@ -8,16 +8,22 @@ package miniprojetS2;
  */
 public class Grid
 {
-	// TODO write "javadoc" comment (not javadoc style)
-	// Represent the line's number of the chess game grid
+	// TODO write "javadoc" comment (not javadoc style) (done)
+	/**
+	 *  Represent the line's number of the chess game grid
+	 */
 	private final static int NUMBER_OF_LINES=8;
 	
-	// TODO write "javadoc" comment (not javadoc style)
-	// Represent the column's number of the chess game grid
+	// TODO write "javadoc" comment (not javadoc style) (done)
+	/**
+	 *  Represent the column's number of the chess game grid
+	 */
 	private final static int NUMBER_OF_COLUMNS=8;	
 	
-	// TODO write javadoc comment
-	// This is the constructor of the chess game grid
+	// TODO write javadoc comment (done)
+	/**
+	 *  This is the constructor of the chess game grid
+	 */
 
 	public Grid()
 	{
@@ -42,9 +48,10 @@ public class Grid
 		{
 			for (int numberofcolumn=0;numberofcolumn<NUMBER_OF_COLUMNS;numberofcolumn++)
 			{
-				gridString[numberoflines][numberofcolumn]="|---";
+				gridString[numberoflines][numberofcolumn]=null;
 			}
 		}
+		return null;
 	}
 	
 }
