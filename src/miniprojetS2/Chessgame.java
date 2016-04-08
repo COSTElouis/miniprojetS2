@@ -1,6 +1,5 @@
 package miniprojetS2;
 
-// TODO fix comment (what kind of game?) (done)
 /**
  * represent the chess game
  * @author costel
@@ -8,17 +7,15 @@ package miniprojetS2;
  */
 
 	
-// TODO rename class (not compliant wih naming conventions)
+// TODO rename class (not compliant with naming conventions)
 public class Chessgame
 {
-	
 	/**
 	 * counter for the loop play to know who will play ( peer for player 1 and odd for player 2)
 	 */
 	private int counter;
 	
 	// TODO fix comment (ask for advice) 
- 
 	 /**
 	  * creation of 2 players and the grid.
 	  */

@@ -1,16 +1,16 @@
 package miniprojetS2;
+
+// TODO fix comment
 /**
- * 
- * @author costel
- * class which creating a Pawn piece.
+ * class which creating a Pawn piece. 
+ * @author costel 
  */
 public class Pawn extends Piece
 {
+	// TODO write comment
 	public Pawn(String nom, int color)
 	{
 		super(nom, color);
 	}
-
-	
 
 }

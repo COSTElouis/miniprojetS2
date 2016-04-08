@@ -6,6 +6,7 @@ package miniprojetS2;
  */
 public class King extends Piece
 {
+	// TODO write comment
 	public King(String nom, int color)
 	{
 		super(nom, color);

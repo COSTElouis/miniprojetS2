@@ -1,17 +1,18 @@
 package miniprojetS2;
+// TODO fix comment
 /**
- * 
- * @author costel
  * class which creating a Queen piece.
+ * @author costel
+ * 
  */
 public class Queen extends Piece
 {
-
+	// TODO write comment
 	public Queen(String nom, int color)
 	{
 		super(nom, color);
 	}
-
+	// TODO write comment
 	public boolean isValid(Move move)
 	{
 		super.isValid(move);

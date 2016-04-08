@@ -16,7 +16,7 @@ public class Main
 	public static void Main(String[] args)
 	{
 		
-		// TODO javadoc syntax is not allowed for implementation comment (done)
+		// TODO javadoc syntax is not allowed for implementation comment
 		
 		/**
 		 * creation of new grid
@@ -24,7 +24,7 @@ public class Main
 		
 		Grid grid= new Grid();
 		
-		// TODO think about it: it will not display anything on console (done)
+		// TODO do not use javadoc syntax for implementation documentation
 		/**
 		 * creation of a new game which is ready to play
 		 */
