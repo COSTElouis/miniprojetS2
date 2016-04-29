@@ -1,8 +1,8 @@
 package miniprojetS2;
 
-// TODO detail comment (represents the grid, coordinate system
+// TODO detail comment (represents the grid, coordinate system (done)
 /**
- *  Represent the chess game grid
+ *  Represent the chess game grid, which is composed by some cases. They can have a piece or not. 
  * @author costel
  *
  */
@@ -20,20 +20,25 @@ public class Grid
 	 */
 	private final static int NUMBER_OF_COLUMNS=8;	
 	
+	/**
+	 * a case with his location (that why it's an array)
+	 */
+	
+	private Case[][] cells;
+	
 	// TODO write javadoc comment (done)
 	/**
 	 *  This is the constructor of the chess game grid
 	 */
-
 	public Grid()
 	{
-		// TODO the constructor is supposed to initialize fields, but this class defines no field.
-		Grid[][] grid = null;
+		cells=new Case[NUMBER_OF_LINES][NUMBER_OF_COLUMNS];
+		// TODO the constructor is supposed to initialize fields, but this class defines no field. (done)
 		for (int numberoflines=0;numberoflines<NUMBER_OF_LINES;numberoflines++)
 		{
 			for (int numberofcolumn=0;numberofcolumn<NUMBER_OF_COLUMNS;numberofcolumn++)
 			{
-				grid[numberoflines][numberofcolumn]=null;
+				cells[numberoflines][numberofcolumn]=new Case();
 			}
 		}
 	}
@@ -43,15 +48,19 @@ public class Grid
 	 */
 	public String toString()
 	{
-		Grid[][] gridString=null;
-		for (int numberoflines=0;numberoflines<NUMBER_OF_LINES;numberoflines++)
+		String chessGrid = "";
+
+		for (int numberOfLine = 0; numberOfLine < NUMBER_OF_LINES; numberOfLine++)
 		{
-			for (int numberofcolumn=0;numberofcolumn<NUMBER_OF_COLUMNS;numberofcolumn++)
-			{
-				gridString[numberoflines][numberofcolumn]=null;
-			}
+			for (int numberOfColumn = 0; numberOfColumn < NUMBER_OF_COLUMNS; numberOfColumn++)
+				chessGrid += this.cells[numberOfLine][numberOfColumn].toString();
+			chessGrid += "¦\n+---";
+				for (int numOflig = 0; numOflig < NUMBER_OF_LINES ; numOflig++)
+					chessGrid +="+---";
+				chessGrid += "+\n";
 		}
-		return null;
+
+		return chessGrid;
 	}
 	
 }
