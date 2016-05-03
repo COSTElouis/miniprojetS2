@@ -19,6 +19,7 @@ public class Main
 		// TODO javadoc syntax is not allowed for implementation comment (done)
 		
 		Grid grid= new Grid();
+		grid.initialisation();
 		System.out.println(grid.toString());
 		
 		// TODO do not use javadoc syntax for implementation documentation (done)
