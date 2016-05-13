@@ -51,27 +51,31 @@ public class Grid
 	 */
 	public void initialisation()
 	{
-		for (int color =0 ; color!=0; color = 1, line = 0)
-		{
-			cells[0][line].setPiece(new Tower("tower",color));
-			cells[1][line].setPiece(new Knight("knight",color));
-			cells[2][line].setPiece(new Bishop("bishop",color));
-			cells[3][line].setPiece(new Queen("queen",color));
-			cells[4][line].setPiece(new King("king",color));
-			cells[5][line].setPiece(new Bishop("bishop",color));
-			cells[6][line].setPiece(new Knight("knight",color));
-			cells[7][line].setPiece(new Tower("tower",color));
-			
-			if (color==1)
-			{
-				line+=-1;
-			}
-			else line += 1;
+			cells[0][0].setPiece(new Tower("tower",1));
+			cells[1][0].setPiece(new Knight("knight",1));
+			cells[2][0].setPiece(new Bishop("bishop",1));
+			cells[3][0].setPiece(new Queen("queen",1));
+			cells[4][0].setPiece(new King("king",1));
+			cells[5][0].setPiece(new Bishop("bishop",1));
+			cells[6][0].setPiece(new Knight("knight",1));
+			cells[7][0].setPiece(new Tower("tower",1));		
 			
 			for (int line = 0; line <= 7; line++)
-				cells[line][line].setPiece(new Pawn("pawn",color));
+				cells[line][1].setPiece(new Pawn("pawn",1));
+			
+			cells[0][7].setPiece(new Tower("tower",1));
+			cells[1][7].setPiece(new Knight("knight",1));
+			cells[2][7].setPiece(new Bishop("bishop",1));
+			cells[3][7].setPiece(new Queen("queen",1));
+			cells[4][7].setPiece(new King("king",1));
+			cells[5][7].setPiece(new Bishop("bishop",1));
+			cells[6][7].setPiece(new Knight("knight",1));
+			cells[7][7].setPiece(new Tower("tower",1));		
+			
+			for (int line = 0; line <= 7; line++)
+				cells[line][6].setPiece(new Pawn("pawn",1));
 		}
-	}
+	
 	/**
 	 * @see java.lang.Object#toString()
 	 */

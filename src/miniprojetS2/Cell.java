@@ -34,10 +34,15 @@ public class Cell
 		switch (this.piece.getName())
 		{
 		case "pawn": a = "| p ";
+		break;
 		case "tower": a = "| t ";
+		break;
 		case "knight": a = "| c ";
+		break;
 		case "king": a = "| k ";
+		break;
 		case "queen": a = "| q ";
+		break;
 		case "bishop": a = "| b ";
 		}
 		

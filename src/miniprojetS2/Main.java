@@ -18,9 +18,11 @@ public class Main
 		
 		// TODO javadoc syntax is not allowed for implementation comment (done)
 		
-		Grid grid= new Grid();
-		grid.initialisation();
-		System.out.println(grid.toString());
+		new Chessgame().play("gamer1", "gamer2");
+		
+		
+		
+		
 		
 		// TODO do not use javadoc syntax for implementation documentation (done)
 		
