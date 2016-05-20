@@ -21,6 +21,7 @@ public class Grid
 	private final static int NUMBER_OF_COLUMNS=8;	
 	
 	/**
+	 * 
 	 * a case with his location (that why it's an array)
 	 */
 	/**
@@ -28,7 +29,7 @@ public class Grid
 	 */
 	private int line;
 	
-	private Cell[][] cells;
+	public Cell[][] cells;
 	
 	// TODO write javadoc comment (done)
 	/**
@@ -63,14 +64,14 @@ public class Grid
 			for (int line = 0; line <= 7; line++)
 				cells[line][1].setPiece(new Pawn("pawn",1));
 			
-			cells[0][7].setPiece(new Tower("tower",1));
-			cells[1][7].setPiece(new Knight("knight",1));
-			cells[2][7].setPiece(new Bishop("bishop",1));
-			cells[3][7].setPiece(new Queen("queen",1));
-			cells[4][7].setPiece(new King("king",1));
-			cells[5][7].setPiece(new Bishop("bishop",1));
-			cells[6][7].setPiece(new Knight("knight",1));
-			cells[7][7].setPiece(new Tower("tower",1));		
+			cells[0][7].setPiece(new Tower("tower",0));
+			cells[1][7].setPiece(new Knight("knight",0));
+			cells[2][7].setPiece(new Bishop("bishop",0));
+			cells[3][7].setPiece(new Queen("queen",0));
+			cells[4][7].setPiece(new King("king",0));
+			cells[5][7].setPiece(new Bishop("bishop",0));
+			cells[6][7].setPiece(new Knight("knight",0));
+			cells[7][7].setPiece(new Tower("tower",0));		
 			
 			for (int line = 0; line <= 7; line++)
 				cells[line][6].setPiece(new Pawn("pawn",1));

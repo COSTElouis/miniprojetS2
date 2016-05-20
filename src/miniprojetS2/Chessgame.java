@@ -10,6 +10,7 @@ import java.util.Scanner;
 // TODO rename class (not compliant with naming conventions) (done)
 public class Chessgame
 {
+	private Piece piece;
 	/**
 	 * counter for the loop play to know who will play ( peer for player 1 and odd for player 2)
 	 */
@@ -18,6 +19,13 @@ public class Chessgame
 	 * create attribute for the key entry
 	 */
 	private static Scanner sc;
+	
+	private int oldCellLine;
+	
+
+	private int oldCellColumn;
+	private int newCellLine;
+	private int newCellColumn;
 	
 	// TODO fix comment (ask for advice) (done)
 	 /**
@@ -45,16 +53,41 @@ public class Chessgame
 			
 			if (counter%2==0)
 			{
-				new Move(new Position(sc.nextInt(),sc.nextInt()),new Position(sc.nextInt(),sc.nextInt()));
+				coordonate();
+				
+				piece=Grid.cells[oldCellLine][oldCellColumn].getPiece();
+				while (!piece.isValid(new Move(new Position(oldCellLine, oldCellColumn),new Position(newCellLine, newCellColumn))))
+				{
+					coordonate();
+				}
+				Grid.cells[oldCellLine][oldCellColumn].setPiece(null);
+				Grid.cells[newCellLine][newCellColumn].setPiece(piece);
 				System.out.println(grid.toString());
 			}
 			else
 			{ 
-				new Move(new Position(sc.nextInt(),sc.nextInt()),new Position(sc.nextInt(),sc.nextInt()));
+				coordonate();
+				
+				piece=Grid.cells[oldCellLine][oldCellColumn].getPiece();
+				while (!piece.isValid(new Move(new Position(oldCellLine, oldCellColumn),new Position(newCellLine, newCellColumn))))
+				{
+					coordonate();
+					System.out.println(grid.toString());
+				}
+				Grid.cells[oldCellLine][oldCellColumn].setPiece(null);
+				Grid.cells[newCellLine][newCellColumn].setPiece(piece);
 				System.out.println(grid.toString());
 			}
 				counter++;
 		}
+	}
+
+	public void coordonate()
+	{
+		oldCellLine=sc.nextInt();
+		oldCellColumn=sc.nextInt();
+		newCellLine=sc.nextInt();
+		newCellColumn=sc.nextInt();
 	}
 	
 	private boolean surrend()
@@ -65,5 +98,24 @@ public class Chessgame
 	private boolean echecEtMat()
 	{
 		return false;
+	}
+	public int getOldCellLine()
+	{
+		return oldCellLine;
+	}
+
+	public int getOldCellColumn()
+	{
+		return oldCellColumn;
+	}
+
+	public int getNewCellLine()
+	{
+		return newCellLine;
+	}
+
+	public int getNewCellColumn()
+	{
+		return newCellColumn;
 	}
 }

@@ -58,4 +58,9 @@ public class Cell
 		this.piece = pieces;
 		
 	}
+	
+	public Piece getPiece()
+	{
+		return this.piece;
+	}
 }
