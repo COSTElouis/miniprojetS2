@@ -31,6 +31,7 @@ public class Grid
 	
 	public Cell[][] cells;
 	
+	
 	// TODO write javadoc comment (done)
 	/**
 	 *  This is the constructor of the chess game grid
@@ -96,5 +97,10 @@ public class Grid
 
 		return chessGrid;
 	}
+	public Cell getCells(int x, int y)
+	{
+		return cells[x][y];
+	}
+	
 	
 }

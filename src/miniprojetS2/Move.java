@@ -41,6 +41,8 @@ public class Move
 	{
 		this.start = start;
 		this.finish = finish;
+		this.moveX=finish.getLine()-start.getLine();
+		this.moveY=finish.getColumn()-start.getColumn();
 	}
 
 	// TODO write comment (done)

@@ -46,6 +46,22 @@ public class Piece
 		return true;
 	}
 	
+	
+	/**
+	 * check if the piece color of the end cell is the same of the piece that we moved
+	 * if it the fact you can eat the piece else you can eat the piece
+	 * @param piecestanding
+	 * @return
+	 */
+	public boolean iseating(Piece piecestanding)
+	{
+		if (piecestanding==null)
+			return false;
+		if (this.color==piecestanding.color)
+			return false;
+		return true;
+	}
+	
 	// TODO write comment(done)
 	// TODO rename method (done)
 	/**
